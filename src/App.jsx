@@ -8,6 +8,11 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-monokai";
 
 
+// Optionally load language tools if needed
+import "ace-builds/src-noconflict/ext-language_tools";
+
+
+
 
 function CodeEditor() {
   const [code, setCode] = useState("// Write your code here");
@@ -72,5 +77,7 @@ export default CodeEditor;
 
 
 
-// Optionally load language tools if needed
-// import "ace-builds/src-noconflict/ext-language_tools";
+
+
+
+
