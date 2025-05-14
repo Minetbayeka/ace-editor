@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import AceEditor from "react-ace";
 import './assets/styles/Styles.css'
 
-// Import a mode and theme (you can import others too)
+// Import a mode and theme 
 import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-monokai";
 
-// Optionally load language tools if needed
-import "ace-builds/src-noconflict/ext-language_tools";
+
 
 function CodeEditor() {
   const [code, setCode] = useState("// Write your code here");
@@ -35,7 +34,6 @@ function CodeEditor() {
   return (
     <div className="container ">
       <h1 id="react">React Ace Editor</h1>
-      <div id="three" class="something">Hi!</div>
       <AceEditor
         mode="javascript"
         theme="monokai"
@@ -69,3 +67,10 @@ export default CodeEditor;
 
 
 
+
+
+
+
+
+// Optionally load language tools if needed
+// import "ace-builds/src-noconflict/ext-language_tools";
